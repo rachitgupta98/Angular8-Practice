@@ -1,0 +1,11 @@
+{{val}}
+
+<input #box (keyup)="setValue(box.value)"/>
+<hr/>
+<div>
+    <app-comp1 [parentValue]="val"></app-comp1>
+</div>
+<div>
+    <app-comp2 [fromParent]="val" (changeEvent)="setValue($event)"></app-comp2>
+</div>
+<div id="clear"></div>

@@ -1,0 +1,12 @@
+<p>Winner of <b>IPL 2020 ?</b></p>
+<br/>
+<div>  
+    <button (click)="visible = !visible">Select team</button>
+</div>
+<div>
+    <app-options *ngIf="visible" [data] = "optionsData" (decider)="setTitle($event)"></app-options>
+</div>
+<br/>
+<div>
+    {{title}} 
+</div>

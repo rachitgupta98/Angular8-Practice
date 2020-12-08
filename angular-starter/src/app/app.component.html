@@ -1,0 +1,10 @@
+<h2>Hello World</h2>
+
+<button (click)="increment()">Increment</button>
+<button (click)="decrement()">Decrement</button>
+<p>{{count}}</p>
+<hr/>
+<input #box (keyup)="getInput(box.value)" (mouseleave)="showMouseL()" (mouseenter)="showMouseE()"/>
+<p>Name:  {{name}}</p>
+<br/>
+Box:{{box.value}}

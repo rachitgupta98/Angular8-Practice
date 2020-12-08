@@ -1,0 +1,17 @@
+<p>ajax works!</p>
+<div class="resposive-table">
+    <table class="table">
+        <tr>
+            <th>#</th>
+            <th>Userid</th>
+            <th>Title</th>
+            <th>Completed</th>
+        </tr>
+        <tr *ngFor="let user of users;let i = index">
+            <td>{{i+1}}</td>
+            <td>{{user.userid}}</td>
+            <td>{{user.title}}</td>
+            <td>{{user.completed}}</td>
+        </tr>
+    </table>
+</div>
