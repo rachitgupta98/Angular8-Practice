@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  textIn:string="rahit";
+  textIn:string="rachit";
   getEnter(){
     console.log(this.textIn)
   }
