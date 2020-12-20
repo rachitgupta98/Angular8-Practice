@@ -1,3 +1,13 @@
-<h2>Hello</h2>
-<form></form>
-<input type="text" [(ngModel)]="textIn" (keyup.enter)="getEnter()"/>
+<h2>{{title}}</h2>
+
+
+<h2>1 way</h2>
+<input  [value]="title"  (keyup.enter)="getEnter()"/>
+
+<h2>2way [using noModel]</h2>
+<input [(ngModel)]="title" (keyup.enter)="getEnter()"/>
+
+<h2>2 way </h2>
+<input  [value]="title"  (keyup.enter)="title=$event.target.value;getEnter()"/>
+
+<!-- banana in a box  [(ngModel)]="title" [()] -->

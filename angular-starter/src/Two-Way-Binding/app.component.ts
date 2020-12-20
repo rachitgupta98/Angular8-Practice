@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,8 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  textIn:string="rachit";
+  title="abc";
+  // @ViewChild("box",null) child:ElementRef;
   getEnter(){
-    console.log(this.textIn)
+    console.log(this.title);
+  }  
+  getMouse(){
+    console.log(this.title);
   }
 }

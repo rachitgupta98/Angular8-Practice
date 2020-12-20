@@ -1,5 +1,5 @@
 import { ChildCompComponent } from './components/child-comp/child-comp.component';
-import { Component, Input, ViewChild} from '@angular/core';
+import { Component, Input, Renderer2, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +9,9 @@ import { Component, Input, ViewChild} from '@angular/core';
 export class AppComponent {
   @ViewChild(ChildCompComponent,null) vv:ChildCompComponent;
   winner;
+  constructor(private render:Renderer2){
+    
+  }
   ngDoCheck(){
     this.winner=this.vv.title;
   }

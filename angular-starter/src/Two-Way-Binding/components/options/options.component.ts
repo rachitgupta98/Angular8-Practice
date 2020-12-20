@@ -7,5 +7,6 @@ import { Component, Input, OnInit, Output,EventEmitter } from '@angular/core';
   styleUrls: ['./options.component.scss']
 })
 export class OptionsComponent{
-  
+  @Input()
+  data
 }

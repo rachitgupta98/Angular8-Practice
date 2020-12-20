@@ -6,7 +6,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 // import { AppModule } from './03-app-binding/app.module';
 // import { AppModule } from './04-Routing/app.module';
 import { AppModule } from './Two-Way-Binding/app.module';
-import { AppModule } from './06-ViewChild/app.module';
+//mport { AppModule } from './06-ViewChild/app.module';
 import { environment } from './environments/environment';
 
 if (environment.production) {
