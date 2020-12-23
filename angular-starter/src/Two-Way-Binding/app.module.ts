@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { OptionsComponent } from './components/options/options.component';
 import { FormsModule } from '@angular/forms';
+import { BazDirective } from 'src/directives/baz/baz.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OptionsComponent
+    OptionsComponent,
+    BazDirective
   ],
   imports: [
     BrowserModule,
